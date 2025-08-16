@@ -37,14 +37,14 @@ const PropertyCard = ({
 
   return (
     <Card
-      className="overflow-hidden transition-all duration-300 hover:shadow-lg bg-white h-full flex flex-col"
+      className="overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 bg-white h-full flex flex-col cursor-pointer group"
       onClick={onClick}
     >
       <div className="relative">
         <img
           src={image}
           alt={`Property at ${address}`}
-          className="w-full h-48 object-cover"
+          className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         />
         {isFeatured && (
           <Badge className="absolute top-2 left-2 bg-primary text-primary-foreground">

@@ -29,16 +29,16 @@ const HeroSection = ({
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-4 text-center text-white max-w-6xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
           Find Your Dream Home
         </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl">
+        <p className="text-xl md:text-2xl mb-10 max-w-3xl leading-relaxed">
           Discover the perfect property that matches your lifestyle and
-          preferences
+          preferences with our expert guidance
         </p>
 
         {/* Search Bar */}
-        <div className="w-full max-w-4xl bg-white/95 rounded-lg shadow-lg p-4 md:p-6">
+        <div className="w-full max-w-5xl bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Location */}
             <div className="space-y-2">
@@ -122,9 +122,9 @@ const HeroSection = ({
           </div>
 
           {/* Search Button */}
-          <div className="mt-6 flex justify-center">
-            <Button className="px-8 py-6 text-lg" size="lg">
-              <Search className="mr-2 h-5 w-5" /> Search Properties
+          <div className="mt-8 flex justify-center">
+            <Button className="px-12 py-6 text-xl font-semibold" size="lg">
+              <Search className="mr-3 h-6 w-6" /> Search Properties
             </Button>
           </div>
         </div>

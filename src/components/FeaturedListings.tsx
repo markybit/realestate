@@ -106,13 +106,14 @@ const FeaturedListings = ({
           {properties.map((property) => (
             <PropertyCard
               key={property.id}
-              title={property.title}
+              image={property.image}
               price={property.price}
-              location={property.location}
+              address={property.location}
               beds={property.beds}
               baths={property.baths}
               sqft={property.sqft}
-              image={property.image}
+              propertyType="House"
+              isFeatured={true}
             />
           ))}
         </div>
